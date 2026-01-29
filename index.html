@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="no-js" data-theme="darkBlue" lang="">
+<!--
+#################################################################################
+  OLED Studio V3.0 - Licensed under AGPL-3.0
+  Copyright (c) 2026 DTechniker
+#################################################################################
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLED Studio V3.0 | Custom Export</title>
+    <link rel="stylesheet" href="src/ui/style.css">
+    <link rel="stylesheet" href="src/ui/fontawesome/css/font-awesome.min.css">
+    <link rel="icon" href="src/ui/pics/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="src/ui/pics/favicon.ico">
+</head>
+<body>
+<header class="headerDisplay rotate">
+    <div class="displayWrapper">
+        <img src="src/ui/pics/BG_Display.jpg" alt="" class="titleIcon">
+        <div class="titleOverlay">
+            <h1>OLED Display</h1>
+            <h1>Studio</h1>
+        </div>
+        <div id="secrectMenu" >
+            <button data-action="tt_displ_sda"></button>
+            <button data-action="tt_displ_scl"></button>
+            <button data-action="tt_displ_vcc"></button>
+            <button data-action="tt_displ_gnd"></button>
+        </div>
+    </div>
+    <div class="subtitle">
+        <a id="creditsLink" href="credits_en.html">V3.0</a>
+        | Advanced Export Edition by DTech
+    </div>
+</header>
+<noscript>
+    <div class="js-warning">
+        DE: JavaScript ist deaktiviert. Das OLED‑Studio kann ohne JavaScript nicht funktionieren. </br>
+        EN: JavaScript is disabled. The OLED Studio requires JavaScript to function correctly.
+    </div>
+</noscript>
+ <!-- MAIN GRID -->
+<main class="main_container">
+    <section class="panel" id="m_panel" data-info="m_main_grid" data-help="m_main_grid">
+        <div class="preview_layout">
+            <div class="preview_left">
+                <div class="preview_Titel" data-lang="tp_titel_preview" data-help="panel_info">
+                    <div class="preview_small">
+                        <canvas id="preview1x" width="128" height="32"></canvas>
+                        <span class="panelTitle_text"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="preview_right">
+                <div class="panel_title" data-lang="m_main_grid">
+                    <span class="panelTitle_text"></span>
+                </div>
+                <div class="controls_row">
+                    <div class="guide_toggles">
+                        <span class="label" data-lang="m_desc_grid"></span>
+                        <label class="colorC2"><input type="checkbox" id="m_chk_grid_8" data-help="m_chk_grid_8_title">8x8</label>
+                        <label class="colorC1"><input type="checkbox" id="m_chk_grid_16" data-help="m_chk_grid_16_title">16x16</label>
+                        <label class="colorC3"><input type="checkbox" id="m_chk_grid_32" data-help="m_chk_grid_32_title">32x32</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_grid_row">
+            <div class="tools_side">
+                <div class="tools_main"><div class="dpad">
+                    <button class="btn_main" data-action="m_shift_left" data-help="m_shift_left"><i class="fa fa-arrow-left"></i></button>
+                    <button class="btn_main" data-action="m_shift_right" data-help="m_shift_right"><i class="fa fa-arrow-right"></i></button>
+                    <button class="btn_main" data-action="m_shift_up" data-help="m_shift_up"><i class="fa fa-arrow-up"></i></button>
+                    <button class="btn_main" data-action="m_shift_down" data-help="m_shift_down"><i class="fa fa-arrow-down"></i></button>
+                </div>
+                    <button class="btn_main" data-action="m_invert" data-help="m_invert"><i class="fa fa-adjust"></i></button>
+                    <button class="btn_main" data-action="m_TxtStamp" data-help="m_TxtStamp"><i class="fa fa-pencil"></i></button>
+                </div>
+                <div class="tools_footer">
+                    <button class="btn_main btn_del" data-action="m_clear" data-help="m_clear"><i class="fa fa-trash"></i></button>
+                    <button class="btn_main" data-action="m_code" data-help="m_code"><i class="fa fa-terminal"></i></button>
+                </div><span class="byLabel">by DTech</span>
+            </div>
+            <div class="display_container_box">
+                <div class="display_wrapper">
+                    <div id="col_headers" class="col_headers"></div>
+                    <div id="row_headers" class="row_headers"></div>
+                    <div id="grid_main"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="middle_row">
+        <!-- WORKSHOP -->
+        <section class="panel" id="w_panel" data-info="w_panel_workshop" data-help="w_panel_workshop">
+            <div class="panel_title" data-lang="w_panel_workshop_desc">
+                <span class="panelTitle_text">Icon Workshop</span>
+                <div class="toggles_right"> 
+                    <label><input type="radio" name="w_mode" id="w_std" data-help="w_std_title" checked><i class="fa fa-th"></i></label> 
+                    <label><input type="radio" name="w_mode" id="w_special"data-help="w_special_title" ><i class="fa fa-th-list"></i></label>
+                </div>
+            </div>
+            <div id="w_panel_body">
+                <div class="workshop_toolbar">
+                    <div class="tools_group">
+                        <button class="btn_main" data-action="w_shift_up" data-help="w_shift_up"><i class="fa fa-arrow-up"></i></button>
+                        <button class="btn_main" data-action="w_shift_down" data-help="w_shift_down"><i class="fa fa-arrow-down"></i></button>
+                        <button class="btn_main" data-action="w_shift_left" data-help="w_shift_left"><i class="fa fa-arrow-left"></i></button>
+                        <button class="btn_main" data-action="w_shift_right" data-help="w_shift_right"><i class="fa fa-arrow-right"></i></button>
+                        <button class="btn_main" data-action="w_invert" data-help="w_invert"><i class="fa fa-adjust"></i></button>
+                        <button class="btn_main" data-action="w_mirror_h" data-help="w_mirror_h"><i class="fa fa-arrows-h"></i></button>
+                        <button class="btn_main" data-action="w_mirror_v" data-help="w_mirror_v"><i class="fa fa-arrows-v"></i></button>
+                        <button class="btn_main" data-action="w_rotate" data-help="w_rotate"><i class="fa fa-repeat"></i></button>
+                        <button class="btn_main" data-action="w_scale" data-help="w_scale"><i class="fa fa-expand"></i></button>
+                        <button class="btn_main" data-action="w_stamp" data-help="w_stamp"><i class="fa fa-gavel"></i></button>
+                        <button class="btn_main btn_del" data-action="w_clear" data-help="w_clear"><i class="fa fa-trash"></i></button>
+                        <button class="btn_main" data-action="w_code" data-help="w_code"><i class="fa fa-terminal"></i></button>
+                    </div>
+                </div>
+                <div class="outer_wrapper">
+                    <div class="workshop_scroll_area" id="workshop_container">
+                        <div class="w_std_block"> <!-- 8x8, 16x16, 32x32 --> </div> 
+                        <div id="w_special_start"></div> 
+                        <div class="w_special_block"> <!-- 8x16, 16x8 --> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MULTIPANEL -->
+        <section class="panel" id="t_panel" data-info="t_panel_templates">
+            <div class="panel_title" data-lang="t_templates_title">
+                <span class="panelTitle_text"></span>
+                <div class="toggles_right"> 
+                    <label><input type="radio" name="fr_mode" id="t_templates" data-lang="t_templates_title" data-help="t_templates_title" checked><i class="fa fa-file-image-o"></i></label> 
+                    <label><input type="radio" name="fr_mode" id="ex_export" data-lang="ex_export_title" data-help="ex_export_title"><i class="fa fa-clipboard"></i></label>
+                    <label><input type="radio" name="fr_mode" id="im_import" data-lang="im_import_title" data-help="im_import_title"><i class="fa fa-upload"></i></label>
+                </div>
+            </div>
+            <!-- TEMPLATES -->
+            <div id="t_panel_body" class="panel_body">
+                <div class="toggles_left">
+                    <span class="label" data-lang="t_templetes_disc"></span>
+                    <label class="colorC2"><input type="checkbox" id="t_chk_filt_8" data-help="t_chk_filt_8_title"> 8x8</label>
+                    <label class="colorC1"><input type="checkbox" id="t_chk_filt_16" data-help="t_chk_filt_16_title"> 16x16</label>
+                    <label class="colorC3"><input type="checkbox" id="t_chk_filt_32" data-help="t_chk_filt_32_title"> 32x32</label>
+                </div>
+                <div class="outer_wrapper">
+                    <div id="elemV_content" class="template_list"></div>
+                </div>
+            </div>
+            <!-- EXPORT -->
+            <div id="ex_panel_body" class="panel_body">
+                <div class="toggles_left">
+                    <div id="ex_ascii_config">
+                        <span data-lang="ex_char_on_title"></span>
+                        <input type="text" id="ex_char_on" value="#" class="ex_char" maxlength="2" title="1.Char" placeholder="#" data-help="ex_char_on_title">
+                        <span data-lang="ex_char_off_title"></span>
+                        <input type="text" id="ex_char_off" value="." class="ex_char" maxlength="2" title="2.Char" placeholder="." data-help="ex_char_off_title">
+                    </div>
+                </div>
+                <div class="textarea_header">
+                    <span data-lang="ex_output_title"></span>
+                    <div class="format_select_group">
+                        <select id="ex_code_format" title="code format" >
+                            <option value="adafruit_gfx" data-lang="ex_code_format.adafruit_gfx" data-help="ex_code_format.adafruit_gfx"></option>
+                            <option value="cpp_binary" data-lang="ex_code_format.cpp_binary" data-help="ex_code_format.cpp_binary"></option>
+                            <option value="ssd1306_native" data-lang="ex_code_format.ssd1306_native" data-help="ex_code_format.ssd1306_native"></option>
+                            <option value="visual_art" data-lang="ex_code_format.visual_art" data-help="ex_code_format.visual_art"></option>
+                        </select>
+                    </div>
+                    <span id="ex_format_volume" data-lang="ex_format_volume">
+                        <strong id="memory_usage">0</strong>
+                    </span>
+                    <div>
+                        <button class="btn_main btn_del" data-action="ex_clr_code" data-help="ex_clr_code"><i class="fa fa-trash"></i></button>
+                        <button class="btn_main" data-action="ex_copyCode" data-help="ex_copyCode"><i class="fa fa-clipboard"></i></button>
+                    </div>
+                </div>
+                <textarea id="ex_outputArea" title="output code" data-help="ex_output_code_title" placeholder="0x00, 0x66, 0x66, 0x10, ...." readonly></textarea>
+            </div>
+            <!-- IMPORT -->
+            <div id="im_panel_body" class="panel_body">
+                <div class="textarea_header">
+                    <span data-lang="im_txt_tip"></span>
+                    <div>
+                        <button class="btn_main btn_del" data-action="im_clr" data-help="im_clr"><i class="fa fa-trash"></i></button>
+                        <button class="btn_main" data-action="im_import" data-help="im_import"><i class="fa fa-upload"></i></button>
+                    </div>
+                </div>
+                <textarea id="im_importArea" title="imput code" data-help="im_import_title" placeholder="0x00, 0x66, 0x66, 0x10, .... // hex 
+0b10000000, 0b00000000, .... // binär" ></textarea>
+            </div>
+        <div id="multi_coment"></div>    
+        </section>
+    </div>
+</main>
+<footer id="app_footer">
+    <!-- HELP -->
+    <section class="panel" id="panel_help">
+        <div id="help_panel_body"><button id="helpModus" class="btn_help" data-action="helpMode"><i class="fa fa-info"></i></button></div>                 
+    </section>
+    <section class="panel isHidden" id="panel_debug">
+        <div id="debug_panel_body">
+            <button class="btn_main btn_del" data-action="errDefault" data-help="errDefault" ><i class="fa fa-bug"></i></button>
+            <button id="setLang_de" class="btn_main" data-action="setLang" data-payload="de" data-help="setLang">de_<i class="fa fa-flag"></i></button>
+            <button id="setLang_en" class="btn_main" data-action="setLang" data-payload="en" data-help="setLang">en_<i class="fa fa-flag"></i></button>
+            <button id="setLang_es" class="btn_main" data-action="setLang" data-payload="es" data-help="setLang">es_<i class="fa fa-flag"></i></button>
+            <button id="setLang_fr" class="btn_main" data-action="setLang" data-payload="fr" data-help="setLang">fr_<i class="fa fa-flag"></i></button>
+            <button id="setLang_tlh" class="btn_main" data-action="setLang" data-payload="tlh" data-help="setLang">tlh_<i class="fa fa-flag"></i></button>
+        </div>                  
+    </section>
+    <div id="stamp_ghost"></div>
+</footer>
+<script type="module" src="src/main.js"></script>
+</body></html>

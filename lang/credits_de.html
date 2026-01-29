@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="darkBlue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLED Studio – Credits</title>
+    <link rel="stylesheet" href="../src/ui/style.css">
+    <link rel="stylesheet" href="../src/ui/fontawesome/css/font-awesome.min.css">
+    <link rel="icon" href="../src/ui/pics/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="../src/ui/pics/favicon.ico">
+</head>
+
+<body style="overflow: auto;">
+<header class="headerDisplay rotate">
+    <div class="displayWrapper">
+        <img src="../src/ui/pics/BG_Display.jpg" alt="" class="titleIcon">
+        <div class="titleOverlay">
+            <h1>OLED Display</h1>
+            <h1>Studio-Credits</h1>
+        </div>
+    </div>
+    <div class="subtitle"> V3.0 | Advanced Export Edition by DTech</div>
+</header>
+<noscript>
+    <div class="js-warning">
+        DE: JavaScript ist deaktiviert. Das OLED‑Studio kann ohne JavaScript nicht funktionieren. </br>
+        EN: JavaScript is disabled. The OLED Studio requires JavaScript to function correctly.
+    </div>
+</noscript>
+ <!-- MAIN GRID -->
+<main class="main_container">
+    <section class="panel" id="m_panel">
+        <div class="preview_layout">
+            <div class="preview_left">
+                <div class="preview_Titel">
+                    <div class="preview_small">
+                        <canvas id="preview1x" width="128" height="32"></canvas>
+                        <span class="panelTitle_text">Version: 3.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="preview_right">
+                <div class="panel_title">
+                    <span class="panelTitle_text">Was ist OLED Studio?</span>
+                </div>
+                <div class="controls_row"></div>
+            </div>
+        </div>
+        <div class="main_grid_row">
+                    <div class="tools_side" style="color:var(--btn-c2)">Änderungen:
+                        <div style="margin-bottom: -40px;margin-left: 20px;">
+                        <li>Struktur modernisiert</li>  
+                        <li>Module vereinheitlicht</li>
+                        <li>Logik gekapselt</li>
+                        <li>Rendering getrennt</li>
+                        <li>Managereingeführt</li>
+                        <li>Architektur gestrafft</li>
+                        <li>Bedienung vereinfacht</li>
+                        <li>Performance verbessert</li>
+                        <div class="tools_footer"></div>
+                        </div><span class="byLabel">by DTech</span>
+                    </div>
+            <div class="display_container_box">
+                <div class="display_wrapper" style="height: 300px;">
+                    <div style="color:var(--btn-c2);font-size: 1.1em;">
+                        Das <strong>OLED Studio</strong> ist ein webbasiertes LED‑Matrix‑Tool, das mehrere Funktionen bündelt:</div>
+                        – leistungsfähiger Pixel‑Editor<br>
+                        <i style="text-align: right;">Optimiert für die Erstellung von Bitmaps und Icons für 128×32‑OLED‑Displays (SSD1306)</i><br>
+                        – flexibles Import‑ und Template‑System<br>
+                        <i style="text-align: right;">Direkte Umwandlung in Code‑Arrays für Arduino, ESP32 und andere Mikrocontroller</i><br>
+                        – fünf Sprachen, Fehlersystem und eine Vielzahl von Werkzeugen für schnelle Weiterverarbeitung<br>
+                        …eingebettet in eine modulare, zukunftssichere Architektur.<br><br>
+                    <div style="font-size: 1.1em;"> Das „Programm“ entstand aus dem Bedürfnis heraus, sich selbst und anderen das Arbeiten 
+                        mit Mikrocontrollern zu erleichtern. Eine schnelle Vorschau oder automatisierte Umrechnung spart enorm viel Zeit und 
+                        vermeidet unnötigen Frust. Darüber hinaus dient das OLED Studio in seiner HTML‑ und JavaScript‑Umsetzung als 
+                        <strong>Arbeitsprobe</strong>, um fachliches Können sichtbar zu machen. Hier ist kein sequenzielles Hobby‑Coding, 
+                        sondern eine professionelle, modulare und zukunftssichere Software‑Architektur das Ergebnis. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="middle_row">
+        <!-- Highlights & Funktionen... -->
+        <section class="panel" id="w_panel" style="flex: 3;">
+            <div class="panel_title">
+                <span class="panelTitle_text">Highlights & Funktionen</span>
+            </div>
+            <div>
+                <div class="outer_wrapper">
+                    <div style="margin: 20px;">
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;" >Editor‑Funktionen:</strong><br> 
+                        <i style="color:var(--btn-c3);">Pixel‑to‑Hex</i> zur Erzeugung kompakter C‑Arrays (z. B. 0xFF). 
+                        <i style="color:var(--btn-c3);">Pixel‑to‑Binary</i> für klare Bit‑Darstellungen (z. B. 0b10101010). 
+                        <i style="color:var(--btn-c3);">Pixel‑to‑ASCII</i> erstellt eine ASCII-ansicht mit einstellbaren Zeichen. <br> 
+                        Unterstützung mehrerer Rastergrößen wie <i style="color:var(--btn-c3);">8×8, 16×16, 32×32, 8×16 und 16×8</i>.<br> 
+                        <i style="color:var(--btn-c3);">Mini‑Vorschau (1:1)</i> zur schnellen Kontrolle einzelner Icons.  
+                        <i style="color:var(--btn-c3);">Togglen</i> ganzer Spalten oder Zeilen mit einem Klick.
+                        <i style="color:var(--btn-c3);">Text Stempeln</i> Ihre Texteingabe wird zu einem freipositionierbaren Icon.
+                        <i style="color:var(--btn-c3);">Template‑ und Stempel‑System</i> für wiederverwendbare Muster.
+                        Präzises Arbeiten durch eine einheitliche interne Datenstruktur.  
+                        <br><br>
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;">Main‑Grid‑Funktionen:</strong> <br>
+                        <i style="color:var(--btn-c3);">Vorschau für 8×8, 16×16 und 32×32‑Layouts.</i> Direkte Umschaltung zwischen verschiedenen Grid‑Ansichten. 
+                        Klare Darstellung der aktiven Pixelmatrix. 
+                        Unterstützung für vertikale und horizontale Strukturierung. Nutzte die Pfeiltasten um schnelles verschieben des Inhaltes zu ermöglichen.<br><br>           
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;" >Workshop‑Tools:</strong><br>
+                        <i style="color:var(--btn-c3);">Spiegeln</i> in horizontaler und vertikaler Ausrichtung. 
+                        <i style="color:var(--btn-c3);">Rotieren</i> in 90°‑Schritten.  
+                        <i style="color:var(--btn-c3);">Skalieren</i> von Mustern (nur im Workshop).  
+                        <i style="color:var(--btn-c3);">Invertieren</i> kompletter Muster.  
+                        <i style="color:var(--btn-c3);">Pixelgenaues Verschieben</i> von Icons und Mustern.<br>  
+                        Kombinieren und Neuplatzieren von Stempeln. Flexible Bearbeitung einzelner oder mehrerer Elemente.  
+                        <br><br>
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;">Import‑/Export‑System:</strong><br>
+                        <i style="color:var(--btn-c3);">Import</i>  für Hex‑ und Binärcodes.
+                        Korrekte Verarbeitung von SSD1306‑Bitmaps inklusive Vertical‑Paging.  
+                        Automatische Breiten‑ und Höhen‑Erkennung.  
+                        <i style="color:var(--btn-c3);">Byte‑zu‑Matrix‑Konvertierung</i> für alle unterstützten Formate.  
+                        <i style="color:var(--btn-c3);">Export</i> in Hex‑Arrays, Binär‑Muster und interne Strukturen.  
+                        <br><br>
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;">Architektur & Systemlogik:</strong><br>
+                        Klare Trennung von Logik, Rendering und Management‑Schichten.  
+                        Modularer Aufbau für langfristige Erweiterbarkeit.  
+                        Regelbasierte Format‑Erkennung und Parsing‑Pipeline.  
+                        Robustes Fehlermanagement für stabile Verarbeitung.  
+                        Einheitliche Datenhaltung über alle Module hinweg.  
+                        <br><br>
+                        <strong style="color:var(--btn-c2);font-size: 1.1em;">Bedienung & Workflow:</strong><br> 
+                        Intuitiver Editor mit direkter visueller Rückmeldung.  
+                        Vollständige Offline‑Nutzung durch lokal integrierte Assets.  
+                        Automatische Sprachauswahl der 4 Hauptsprachen <i style="color:var(--btn-c3);">Deutsch, Englisch, Französisch und Spanisch</i> ohne externe Abhängigkeiten.  
+                        Konsistente Bedienlogik durch einheitliche UI‑Elemente.  
+                        Klare Panel‑Struktur für Editor, Workshop und Import. Einer geheimen <i style="color:var(--btn-c3);">Theme-Auswahl</i> (strg+k)                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projektstruktur -->
+        <section class="panel" id="t_panel">
+            <div class="panel_title">
+                <span class="panelTitle_text">Projektstruktur</span>
+            </div>
+            <div>
+                <div class="workshop_toolbar"></div>
+                <div class="outer_wrapper">
+                    <div class="workshop_scroll_area">
+                        <pre class="codeView" style="color:var(--btn-c3);">
+    /src
+        main.js
+        /core
+            App.js
+            DomMap.js
+            ErrorSystem.js
+            InfoSystem.js
+            LangSystem.js
+            MasterBindings.js
+            MasterUtils.js
+        /modules
+            /export
+                Export.logic.js
+                Export.renderer.js
+                Export.manager.js
+            /import
+                Import.logic.js
+                Import.renderer.js
+                Import.manager.js
+            /mainGrid
+                MainGrid.logic.js
+                MainGrid.renderer.js
+                MainGrid.manager.js
+            /stamp
+                font.data.js
+                Stamp.logic.js
+                Stamp.renderer.js
+                Stamp.manager.js
+            /templates
+                Templates.logic.js
+                Templates.renderer.js
+                Templates.manager.js
+                templates.data.js
+            /workshop
+                Workshop.logic.js
+                Workshop.renderer.js
+                Workshop.manager.js
+        /ui
+            fontawesome/
+            pics/
+                BG_Display.jpg
+                favicon.ico
+                favicon.svg
+            ClassMap.js
+            style.css
+            UiOutput.js
+            UiPanelManager.js
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer id="app_footer">
+    <!-- HELP -->
+    <section class="panel" id="panel_help">
+        <div id="help_panel_body">
+            <a class="back" href="../index.html"><i class="fa fa-angle-double-left"></i><i class="fa fa-home"></i></a>
+        </div>                    
+    </section>
+</footer>
+</body></html>
