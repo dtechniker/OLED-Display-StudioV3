@@ -110,16 +110,16 @@ Centralized exception handling. Provides user-friendly error messages and debug 
 The codebase enforces the MVC pattern (Manager/View/Logic) across all modules:
 
 /src
- ├── main.js                  # Entry point
- ├── /core                    # Core Systems (Singleton patterns)
- │    ├── App.js
- │    ├── DomMap.js
- │    ├── ErrorSystem.js
- │    ├── InfoSystem.js
- │    ├── LangSystem.js
- │    ├── MasterBindings.js
- │    └── MasterUtils.js
- ├── /modules                 # Feature Modules (Strict Separation)
+ ├── main.js                  # Entry point<br>
+ ├── /core                    # Core Systems (Singleton patterns)<br>
+ │    ├── App.js<br>
+ │    ├── DomMap.js<br>
+ │    ├── ErrorSystem.js<br>
+ │    ├── InfoSystem.js<br>
+ │    ├── LangSystem.js<br>
+ │    ├── MasterBindings.js<br>
+ │    └── MasterUtils.js<br>
+ ├── /modules                 # Feature Modules (Strict Separation)<br>
  │    ├── /export
  │    │    ├── Export.logic.js
  │    │    ├── Export.renderer.js
@@ -137,13 +137,13 @@ The codebase enforces the MVC pattern (Manager/View/Logic) across all modules:
  │    ├── /templates
  │    └── /workshop
  └── /ui                      # Assets & Shared UI Components
-      ├── /fontawesome
-      ├── /pics
-      ├── ClassMap.js
-      ├── style.css
-      ├── UiOutput.js
-      └── UiPanelManager.js
-
+      ├── /fontawesome<br>
+      ├── /pics<br>
+      ├── ClassMap.js<br>
+      ├── style.css<br>
+      ├── UiOutput.js<br>
+      └── UiPanelManager.js<br>
+<br>
 
 🚀 Deployment & Usage
 
