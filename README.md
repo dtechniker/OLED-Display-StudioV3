@@ -120,23 +120,23 @@ The codebase enforces the MVC pattern (Manager/View/Logic) across all modules:
  │    ├── MasterBindings.js<br>
  │    └── MasterUtils.js<br>
  ├── /modules                 # Feature Modules (Strict Separation)<br>
- │    ├── /export
- │    │    ├── Export.logic.js
- │    │    ├── Export.renderer.js
- │    │    └── Export.manager.js
- │    ├── /import
- │    │    ├── Import.logic.js
- │    │    ├── Import.renderer.js
- │    │    └── Import.manager.js
- │    ├── /mainGrid
- │    ├── /stamp
- │    │    ├── font.data.js
- │    │    ├── Stamp.logic.js
- │    │    ├── Stamp.renderer.js
- │    │    └── Stamp.manager.js
- │    ├── /templates
- │    └── /workshop
- └── /ui                      # Assets & Shared UI Components
+ │    ├── /export<br>
+ │    │    ├── Export.logic.js<br>
+ │    │    ├── Export.renderer.js<br>
+ │    │    └── Export.manager.js<br>
+ │    ├── /import<br>
+ │    │    ├── Import.logic.js<br>
+ │    │    ├── Import.renderer.js<br>
+ │    │    └── Import.manager.js<br>
+ │    ├── /mainGrid<br>
+ │    ├── /stamp<br>
+ │    │    ├── font.data.js<br>
+ │    │    ├── Stamp.logic.js<br>
+ │    │    ├── Stamp.renderer.js<br>
+ │    │    └── Stamp.manager.js<br>
+ │    ├── /templates<br>
+ │    └── /workshop<br>
+ └── /ui                      # Assets & Shared UI Components<br>
       ├── /fontawesome<br>
       ├── /pics<br>
       ├── ClassMap.js<br>
@@ -230,40 +230,40 @@ Das Update auf Version 3.0 folgte strikten Engineering-Prinzipien, um "Hobby-Cod
 Die Dateistruktur belegt die konsequente Umsetzung des MVC-Patterns (Manager/View/Logic):
 
 /src
- ├── main.js                  # Einstiegspunkt
- ├── /core                    # Core Systeme (Singleton Pattern)
- │    ├── App.js
- │    ├── DomMap.js
- │    ├── ErrorSystem.js
- │    ├── InfoSystem.js
- │    ├── LangSystem.js
- │    ├── MasterBindings.js
- │    └── MasterUtils.js
- ├── /modules                 # Feature Module (Strikte Trennung)
- │    ├── /export
- │    │    ├── Export.logic.js
- │    │    ├── Export.renderer.js
- │    │    └── Export.manager.js
- │    ├── /import
- │    │    ├── Import.logic.js
- │    │    ├── Import.renderer.js
- │    │    └── Import.manager.js
- │    ├── /mainGrid
- │    ├── /stamp
- │    │    ├── font.data.js
- │    │    ├── Stamp.logic.js
- │    │    ├── Stamp.renderer.js
- │    │    └── Stamp.manager.js
- │    ├── /templates
- │    └── /workshop
- └── /ui                      # Assets & UI Komponenten
-      ├── /fontawesome
-      ├── /pics
-      ├── ClassMap.js
-      ├── style.css
-      ├── UiOutput.js
-      └── UiPanelManager.js
-
+ ├── main.js                  # Einstiegspunkt<br>
+ ├── /core                    # Core Systeme (Singleton Pattern)<br>
+ │    ├── App.js<br>
+ │    ├── DomMap.js<br>
+ │    ├── ErrorSystem.js<br>
+ │    ├── InfoSystem.js<br>
+ │    ├── LangSystem.js<br>
+ │    ├── MasterBindings.js<br>
+ │    └── MasterUtils.js<br>
+ ├── /modules                 # Feature Module (Strikte Trennung)<br>
+ │    ├── /export<br>
+ │    │    ├── Export.logic.js<br>
+ │    │    ├── Export.renderer.js<br>
+ │    │    └── Export.manager.js<br>
+ │    ├── /import<br>
+ │    │    ├── Import.logic.js<br>
+ │    │    ├── Import.renderer.js<br>
+ │    │    └── Import.manager.js<br>
+ │    ├── /mainGrid<br>
+ │    ├── /stamp<br>
+ │    │    ├── font.data.js<br>
+ │    │    ├── Stamp.logic.js<br>
+ │    │    ├── Stamp.renderer.js<br>
+ │    │    └── Stamp.manager.js<br>
+ │    ├── /templates<br>
+ │    └── /workshop<br>
+ └── /ui                      # Assets & UI Komponenten<br>
+      ├── /fontawesome<br>
+      ├── /pics<br>
+      ├── ClassMap.js<br>
+      ├── style.css<br>
+      ├── UiOutput.js<br>
+      └── UiPanelManager.js<br>
+<br>
 
 📜 Lizenz & Credits
 
