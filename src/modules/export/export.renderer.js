@@ -57,5 +57,29 @@ export class ExportRenderer {
     }
     // ---------------------------------------------------------
     copyToClipboard() { navigator.clipboard.writeText(this.dom.output.value);}
+    // ---------------------------------------------------------
+    exportPNG(matrix, grid) {
+        const [w, h] = grid.split("x").map(Number);
+        const scale = 10;
+        const canvas = document.createElement("canvas");
+        canvas.width = w * scale;
+        canvas.height = h * scale;
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);            // Kein Hintergrund → transparent
+        ctx.fillStyle = "#000000";                                 // Aktive Pixel = Schwarz
+        for (let y = 0; y < h; y++) {
+            for (let x = 0; x < w; x++) {
+                if (matrix[y][x] === 1) {
+                    ctx.fillRect(x * scale, y * scale, scale, scale);
+                }
+            }
+        }
+        const url = canvas.toDataURL("image/png");
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `OLED-StudioV3_byDTech_${w}x${h}.png`;
+        a.click();
+    }
 }
+
 
