@@ -48,6 +48,7 @@ export const LANG_EN = {
         cpp_binary: "C++ Binary (0b0010...)",
         ssd1306_native: "Native Hardware (Vertical)",
         visual_art: "ASCII View"},
+    ex_code_png: "Download as icon.png",
     // =========================
     // Import (im_)
     im_import_title: "Hex / Binary Import [Array]",
@@ -126,4 +127,5 @@ export const LANG_EN = {
         im_quicktipp: { t: "Tips & Tricks", d: "Make sure your imported code includes the correct icon size (e.g., 8x8) and the matching array length. Export an example first to see the correct format." }
     }
 };
+
 
