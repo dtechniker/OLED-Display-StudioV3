@@ -117,6 +117,7 @@ export const LANG_DE = {
         ex_clr_code:        { t: "Löschen", d: "Ausgabefeld leeren." },
         ex_copyCode:        { t: "Kopieren", d: "Code in die Zwischenablage kopieren." },
         ex_quicktipp:       {t: "Tipps&Tricks", d: "Achten Sie immer auf die korrekten schreibweisen Ihere Benutzten Entwicklungsumgebung."},
+        ex_code_png:        { t: "Download", d: "Speichere das Pixelmuster als PNG auf dein Endgerät." },
         // =========================
         // Import (im_)
         im_import_section:  { t: "Import", d: "Hier kannst du Icon-Daten importieren." },
@@ -125,3 +126,4 @@ export const LANG_DE = {
         im_quicktipp:       {t: "Tipps&Tricks", d: "Es ist wichtig das Ihr eingefügter Code auch die Icon größe beinhaltet z.B. 8x8 und die passende array anzahl. Exprotieren Sie ein Beispiel zur Ansicht der korrekten Form."}
     }
 };
+
