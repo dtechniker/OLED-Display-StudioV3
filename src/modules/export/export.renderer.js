@@ -15,6 +15,19 @@ export class ExportRenderer {
     // ---------------------------------------------------------
     setMemoryUsage(bytes) { this.dom.memoryUsage.innerHTML = this.app.s("ex_format_volume")+"</strong>"+bytes+" byte</strong>"; }
     // ---------------------------------------------------------
+    setNewExports() {
+        const select = document.getElementById("ex_code_format");
+        const formats = [
+            { value: "png", lang: "ex_code_format.png" }
+        ];
+        formats.forEach(f => {
+            select.insertAdjacentHTML(
+                "beforeend",
+                `<option value="${f.value}" data-lang="${f.lang}" data-help="${f.lang}">Download -> .png <- Format</option>`
+            );
+        });
+    }
+    // ---------------------------------------------------------
     getFormat() {
     const format = this.dom.formatSelect.value;
     if (format === "visual_art") {
@@ -45,3 +58,4 @@ export class ExportRenderer {
     // ---------------------------------------------------------
     copyToClipboard() { navigator.clipboard.writeText(this.dom.output.value);}
 }
+
