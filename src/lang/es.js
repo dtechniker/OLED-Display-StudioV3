@@ -47,8 +47,8 @@ export const LANG_ES = {
         adafruit_gfx: "Adafruit GFX (Arreglo Hex)",
         cpp_binary: "C++ Binario (0b0010...)",
         ssd1306_native: "Hardware nativo (Vertical)",
-        visual_art: "Vista ASCII"
-    },
+        visual_art: "Vista ASCII"},
+    ex_code_png: "Descargar como icono.png",
     // =========================
     // Import (im_)
     im_import_title: "Importar Hex / Binario [Array]",
@@ -127,4 +127,5 @@ export const LANG_ES = {
         im_quicktipp: { t: "Consejos", d: "Asegúrate de que el código importado incluya el tamaño correcto del icono (por ejemplo, 8x8) y la longitud adecuada del arreglo. Exporta un ejemplo para ver el formato correcto." }
     }
 };
+
 
