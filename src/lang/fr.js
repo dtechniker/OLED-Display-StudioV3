@@ -48,6 +48,7 @@ export const LANG_FR = {
         cpp_binary: "C++ Binaire (0b0010...)",
         ssd1306_native: "Matériel natif (Vertical)",
         visual_art: "Vue ASCII"},
+    ex_code_png: "Télécharger comme icône.png",
     // =========================
     // Import (im_)
     im_import_title: "Importation Hex / Binaire [Array]",
@@ -126,4 +127,5 @@ export const LANG_FR = {
         im_quicktipp: { t: "Astuces", d: "Assurez-vous que le code importé contient la bonne taille d’icône (par ex. 8x8) ainsi que la longueur de tableau correspondante. Exportez d’abord un exemple pour voir le format correct." }
     }
 };
+
 
