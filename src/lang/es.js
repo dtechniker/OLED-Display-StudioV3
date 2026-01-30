@@ -118,6 +118,7 @@ export const LANG_ES = {
         ex_clr_code:  { t: "Borrar", d: "Vaciar el campo de salida." },
         ex_copyCode:  { t: "Copiar", d: "Copiar el código al portapapeles." },
         ex_quicktipp: { t: "Consejos", d: "Presta siempre atención a la ortografía correcta requerida por tu entorno de desarrollo." },
+        ex_code_png: { t: "Descargar", d: "Guarda el patrón de píxeles como un archivo PNG en tu dispositivo." },
         // =========================
         // Import (im_)
         im_import_section: { t: "Importar", d: "Importa datos de iconos aquí." },
@@ -126,3 +127,4 @@ export const LANG_ES = {
         im_quicktipp: { t: "Consejos", d: "Asegúrate de que el código importado incluya el tamaño correcto del icono (por ejemplo, 8x8) y la longitud adecuada del arreglo. Exporta un ejemplo para ver el formato correcto." }
     }
 };
+
