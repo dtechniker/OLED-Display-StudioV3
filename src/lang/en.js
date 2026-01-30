@@ -117,6 +117,7 @@ export const LANG_EN = {
         ex_clr_code:  { t: "Clear", d: "Clear the output field." },
         ex_copyCode:  { t: "Copy", d: "Copy the code to the clipboard." },
         ex_quicktipp: { t: "Tips & Tricks", d: "Always pay attention to the correct spelling required by your development environment." },
+        ex_code_png: { t: "Download", d: "Save the pixel pattern as a PNG file on your device." },
         // =========================
         // Import (im_)
         im_import_section: { t: "Import", d: "Import icon data here." },
@@ -125,3 +126,4 @@ export const LANG_EN = {
         im_quicktipp: { t: "Tips & Tricks", d: "Make sure your imported code includes the correct icon size (e.g., 8x8) and the matching array length. Export an example first to see the correct format." }
     }
 };
+
