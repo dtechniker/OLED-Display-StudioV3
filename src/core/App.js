@@ -50,9 +50,11 @@ export class App {
 			this.templates.init();						// Vorlagen
 			this.stamp.init();							// Stempelsystem
 			this.uiPanels.init();						// Panels anzeigen
+			this.export.init();							// Neue Export erzeugen
 		//this.info.show("tooltip_clr");				// Info anzeigen
         } catch (err) {
             this.error.error(err.message, err);
         }
 	}
 }
+
