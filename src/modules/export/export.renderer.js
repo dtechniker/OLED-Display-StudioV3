@@ -18,7 +18,7 @@ export class ExportRenderer {
     setNewExports() {
         const select = document.getElementById("ex_code_format");
         const formats = [
-            { value: "png", lang: "ex_code_format.png" }
+            { value: "png", lang: "ex_code_png" }
         ];
         formats.forEach(f => {
             select.insertAdjacentHTML(
@@ -81,5 +81,6 @@ export class ExportRenderer {
         a.click();
     }
 }
+
 
 
