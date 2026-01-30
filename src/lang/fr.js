@@ -117,6 +117,7 @@ export const LANG_FR = {
         ex_clr_code:  { t: "Effacer", d: "Vider le champ de sortie." },
         ex_copyCode:  { t: "Copier", d: "Copier le code dans le presse‑papiers." },
         ex_quicktipp: { t: "Astuces", d: "Veillez toujours à respecter l’orthographe exigée par votre environnement de développement." },
+        ex_code_png: { t: "Télécharger", d: "Enregistrez le motif de pixels au format PNG sur votre appareil." },
         // =========================
         // Import (im_)
         im_import_section: { t: "Importer", d: "Importer des données d’icône ici." },
@@ -125,3 +126,4 @@ export const LANG_FR = {
         im_quicktipp: { t: "Astuces", d: "Assurez-vous que le code importé contient la bonne taille d’icône (par ex. 8x8) ainsi que la longueur de tableau correspondante. Exportez d’abord un exemple pour voir le format correct." }
     }
 };
+
