@@ -117,6 +117,7 @@ export const LANG_KLINGON = {
         ex_clr_code:      { t: "teq", d: "Qum pat yIteq." },
         ex_copyCode:      { t: "jIghItlh", d: "Qum pat De’ yIghItlh." },
         ex_quicktipp: { t: "qeSmey", d: "De’ghomlIj lo’meH, mu’ghom lugh lo’taHghach yIqIm." },
+        ex_code_png:      { t: "nagh beQ", d: "mIllogh pixel PNG‑ghach ghoS De’wI’lIjDaq nItlh."},
         // =========================
         // Import (im_)
         im_import_section: { t: "ngev", d: "mIllogh De’ yIngev." },
@@ -125,3 +126,4 @@ export const LANG_KLINGON = {
         im_quicktipp: { t: "qeSmey", d: "ImportmeylIjDaq nger qech lugh (8×8 rur) ’ej mI’ghom tIq lugh ghajlu’ ’e’ yInID. Format lugh leghmeH, wa’ Doch bIexportnIS." }
     }
 };
+
