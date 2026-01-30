@@ -48,6 +48,7 @@ export const LANG_KLINGON = {
         cpp_binary: "C++ mI’pat (0b0010...)",
         ssd1306_native: "SSD1306 pat motlh (vertical)",
         visual_art: "ASCII mIllogh"},
+    ex_code_png: "mIlloghHom.png ngeH",
     // =========================
     // Import (im_)
     im_import_title: "Hex / Binary ngevwI’ [Array]",
@@ -126,4 +127,5 @@ export const LANG_KLINGON = {
         im_quicktipp: { t: "qeSmey", d: "ImportmeylIjDaq nger qech lugh (8×8 rur) ’ej mI’ghom tIq lugh ghajlu’ ’e’ yInID. Format lugh leghmeH, wa’ Doch bIexportnIS." }
     }
 };
+
 
