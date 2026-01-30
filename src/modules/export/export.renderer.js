@@ -23,7 +23,7 @@ export class ExportRenderer {
         formats.forEach(f => {
             select.insertAdjacentHTML(
                 "beforeend",
-                `<option value="${f.value}" data-lang="${f.lang}" data-help="${f.lang}">Download -> .png <- Format</option>`
+                `<option value="${f.value}" data-lang="${f.lang}" data-help="${f.lang}">${this.app.s(f.lang)}</option>`
             );
         });
     }
@@ -81,6 +81,7 @@ export class ExportRenderer {
         a.click();
     }
 }
+
 
 
 
