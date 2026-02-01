@@ -114,11 +114,13 @@ export class MasterBindings {
     enterStampMode() {
         this.app.state.stampActive = true;
         this.app.stamp.activate();
+        document.body.style.overflow = "hidden";
     }
     exitStampMode() {
         this.app.state.stampActive = false;
         this.app.stamp.logic.clearCurrentPattern();
         this.app.stamp.deactivate();
+        document.body.style.overflow = "auto";
     }
     // -------------------------------------------------------
     // GLOBAL MOUSE EVENTS
@@ -173,3 +175,4 @@ export class MasterBindings {
 
 
 }
+
