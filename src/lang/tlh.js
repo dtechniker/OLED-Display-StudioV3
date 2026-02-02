@@ -49,6 +49,8 @@ export const LANG_KLINGON = {
         ssd1306_native: "SSD1306 pat motlh (vertical)",
         visual_art: "ASCII mIllogh"},
     ex_code_png: "mIlloghHom.png ngeH",
+    ex_png_bg_trans_title:"moQmoH Hutlhbogh Qor",
+    ex_png_pixel_trans_title:"pIxelmey moQmoH",
     // =========================
     // Import (im_)
     im_import_title: "Hex / Binary ngevwI’ [Array]",
@@ -127,5 +129,6 @@ export const LANG_KLINGON = {
         im_quicktipp: { t: "qeSmey", d: "ImportmeylIjDaq nger qech lugh (8×8 rur) ’ej mI’ghom tIq lugh ghajlu’ ’e’ yInID. Format lugh leghmeH, wa’ Doch bIexportnIS." }
     }
 };
+
 
 
