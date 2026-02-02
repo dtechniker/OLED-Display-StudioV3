@@ -30,15 +30,15 @@ export class ExportRenderer {
         const container = dom.pngConfig;
         container.innerHTML = `
             <label>
-                Color: <i class="fa fa-address-book-o"></i> -->:
+                Color -> <i class="fa fa-address-book-o"></i> --> [
                 <input type="color" id="ex_png_fg" value="#000000" title="Pixel-Color">
-                <input type="checkbox" id="ex_png_pixel_trans" title="Transparent">
+                <input type="checkbox" id="ex_png_pixel_trans" title="Transparent"> ]
             </label>
             |---|
             <label>
-                Color: <i class="fa fa-address-book"></i> -->:
+                Color -> <i class="fa fa-address-book"></i> --> [
                 <input type="color" id="ex_png_bg" value="#ffffff" title="Backgrund-Color">
-                <input type="checkbox" id="ex_png_bg_trans" title="Transparent" checked>
+                <input type="checkbox" id="ex_png_bg_trans" title="Transparent" checked> ]
             </label>
         `;
     }
@@ -123,3 +123,4 @@ export class ExportRenderer {
     }
 
 }
+
