@@ -133,6 +133,7 @@ button:hover { transform:translateY(1px) scale(.98); filter:brightness(.9); box-
 .t_btns { display:flex; gap:4px; }
 .t_btns button { width:40px; height:20px; font-size:.7em; }
 .t_btn_load { border-color:var(--border); }
+input[type="color"] { width: 20px; height: 20px; border: none; border-radius: 3px; padding: 0; background: none; cursor: pointer; }
 /* -------------------------------------------------------
    TEMPLATE LIST
 ------------------------------------------------------- */
@@ -188,3 +189,4 @@ a:active { color:inherit; }
 .is-warning { background: var(--bg-dark); color: #ffff00;}
 .is-error { background: var(--bg-dark); color: #ff0000; }
 .is-info { background: var(--bg-dark); color: var(--accent);}
+
