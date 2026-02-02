@@ -112,8 +112,8 @@ textarea { width:-webkit-fill-available; height:235px; background:var(--bg-dark)
 .preview_label { font-size:.6em; color:#555; margin-bottom:5px; text-transform:uppercase; width:100%; }
 canvas { background:var(--disp-bg); border:1px solid #333; image-rendering:pixelated; }
 select { border-radius:4px; text-align:center; background:var(--elem-bg); color:var(--accent);padding: 4px;}
-#ex_ascii_config { display:none; align-items:center; gap:5px; font-size:.8em; color:cadetblue; position:absolute; top:260px; left:230px;}
-#ex_ascii_config.visible { display:inline-block; }
+#ex_ascii_config,#ex_png_config { display:none; align-items:center; gap:5px; font-size:.8em; color:cadetblue; position:absolute; top:260px; left:230px;}
+#ex_ascii_config.visible,#ex_png_config.visible { display:inline-block; }
 #ex_char_on, #ex_char_off { max-width:20px; background:var(--baseBorder); text-align:center; color:var(--accent); border-radius:4px;}
 /* -------------------------------------------------------
    BUTTONS
@@ -188,6 +188,7 @@ a:active { color:inherit; }
 .is-warning { background: var(--bg-dark); color: #ffff00;}
 .is-error { background: var(--bg-dark); color: #ff0000; }
 .is-info { background: var(--bg-dark); color: var(--accent);}
+
 
 
 
