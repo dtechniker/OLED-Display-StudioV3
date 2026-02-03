@@ -71,7 +71,7 @@ export class MasterBindings {
         if (!action) return;
         if (action.startsWith("setLang")) {                             // Spracheinstellung
             this.app.lang.set(payload);
-            this.app.uiPanels.updateHelp(); return;}
+            this.app.uiPanels.refreshLang(); return;}
         if (action.startsWith("tt_")) {                                 // Tipp darstellungen
             this.app.uiOutput.showInfo("Tipp: "+this.app.t(action)+ " -> "+this.app.td(action)); return;}
         if (action.startsWith("m_")) {                                  // MainGrid-Tools
@@ -159,12 +159,7 @@ export class MasterBindings {
             this.app.lang.set("de");                                // Zurück zu Deutsch (oder vorherige Sprache)
         }
         this.toggleTheme();                                         // Theme aktivieren
-        this.app.grid.renderer.updatePreview();
-        this.app.grid.renderer.renderGridBorders();
-        this.app.uiPanels.updateHelp();
-        this.app.templates.renderer.renderTemplateList(this.app.templates.logic.templates);
-        this.app.templates.addLoadButtons();
-        this.app.stamp.addStampButtons();
+        this.app.uiPanels.refreshLang(); 
     }
     // -------------------------------------------------------
     toggleDebugMode() {
@@ -175,4 +170,5 @@ export class MasterBindings {
 
 
 }
+
 
