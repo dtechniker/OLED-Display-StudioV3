@@ -27,7 +27,6 @@ export class UiPanelManager {
         }
         this.updateTitle();
         this.updateHelp();
-        this.refreshCanvas();
     }
     // ---------------------------------------------------------
     updateTitle() {
@@ -46,10 +45,18 @@ export class UiPanelManager {
         helpBox.textContent = entry?.d || "";
     }
     // ---------------------------------------------------------
-    refreshCanvas() {
-        // Falls du später mode-spezifische Refreshes brauchst:
-        // if (this.currentMode === "t_templates") this.app.templates.refresh();
-        // if (this.currentMode === "ex_export") this.app.export.refresh();
-        // if (this.currentMode === "im_import") this.app.import.refresh();
+    refreshModulparts() {
+        if (this.app.export.currentMode !== null) this.app.export.refresh();
+        this.app.grid.renderer.updatePreview();
+        this.app.grid.renderer.renderGridBorders();
+        this.app.templates.renderer.renderTemplateList(this.app.templates.logic.templates);
+        this.app.templates.addLoadButtons();
+        this.app.stamp.addStampButtons();
+    }
+    // ---------------------------------------------------------
+    refreshLang(){
+        this.updateHelp();
+        this.refreshModulparts();
     }
 }
+
