@@ -65,4 +65,14 @@ export class ExportManager {
         this.renderer.setMemoryUsage(bytesCount);
         this.app.dom.export.btnCopy.title = this.app.t("ex_copyCode");
     }
+    // ---------------------------------------------------------
+    refresh(){
+        const { type: format } = this.renderer.getFormat();
+                if (format === "png") {
+                    this.renderer.setOutput(`[${this.app.td("ex_code_png")}]`);
+                    this.renderer.setMemoryUsage(0);
+                    this.app.dom.export.btnCopy.title = this.app.t("ex_code_png");
+                }
+    }
 }
+
