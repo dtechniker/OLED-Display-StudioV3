@@ -58,7 +58,7 @@ export const LANG_DE = {
     im_alert_Import: "Falsches Format. Bitte prüfen, ob der Icon-Name (Icon8x8) gesetzt ist.",
     im_format_ready: "Format erkannt: ",
     im_format_un: "Format oder System unbekannt!",
-    im_bitMap_error: "aber höhe und Breite fehlen. -> bitmap_WxH[]",
+    im_bitMap_error: "aber Höhe und Breite fehlen. -> bitmap_WxH[]",
     // =========================
     // ACTION TOOLTIP SYSTEM
     // =========================
@@ -66,10 +66,10 @@ export const LANG_DE = {
         // SYSTEM
         tooltip_clr:    { t: "Tipps & Tricks", d: "Nutze den Mauszeiger, um mehr Infos zu den Funktionen zu erhalten." },
         helpMode:       { t: "Hilfe-Modus an/aus", d: "Zeige hover-Tipps zu den Funktionen." },
-        ready:          { t: "<i style=color:var(--btn-c2);>Hilfe-Modus</i>", d: "Zeige auf etwas um mehr zu erfahren. (i) zum Beenden." },
+        ready:          { t: "<i style=color:var(--btn-c2);>Hilfe-Modus</i>", d: "Zeige auf etwas um mehr zu erfahren. (i) zum beenden." },
         info_missing:   { t: "Info", d: "Keine Beschreibung verfügbar." },
         stampEmpty:     { t: "System", d: "Kein verwertbarer Inhalt für den Stempel." },
-        errDefault:     { t: "Systemfehler", d: "Fehler auslösetest." },
+        errDefault:     { t: "Systemfehler", d: "Fehler Auslösetest" },
         panel_info:     { t: "Info & Vorschau", d: "Zeigt Informationen und eine Vorschau des aktuellen Icons." },
         setLang:        { t: "Sprachauswahl",d:"Ändere die Browsersprache auf..."},
         // =========================
@@ -119,7 +119,7 @@ export const LANG_DE = {
         ex_export_section:  { t: "Export", d: "Hier exportierst du dein Icon in verschiedene Formate." },
         ex_clr_code:        { t: "Löschen", d: "Ausgabefeld leeren." },
         ex_copyCode:        { t: "Kopieren", d: "Code in die Zwischenablage kopieren." },
-        ex_quicktipp:       {t: "Tipps&Tricks", d: "Achten Sie immer auf die korrekten schreibweisen Ihere Benutzten Entwicklungsumgebung."},
+        ex_quicktipp:       {t: "Tipps&Tricks", d: "Achten Sie immer auf die korrekten schreibweisen Ihrer Benutzten Entwicklungsumgebung."},
         ex_code_png:        { t: "Download", d: "Speichere das Pixelmuster als PNG auf dein Endgerät." },
         // =========================
         // Import (im_)
